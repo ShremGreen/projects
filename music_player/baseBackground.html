@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <title>音乐播放器</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("http://p2.music.126.net/VGf3MMmpQpjppLrKPinepw==/109951164207181002.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .blurBG {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(50px);
+            transition: all 1s;
+            z-index: -1;
+        }
+
+        .player {
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* 后代选择器 */
+        .player .playerOpe {
+            height: 80px;
+            width: 360px;
+            border-radius: 15px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .control i {
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+            color: #666;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        i:hover {
+            border-radius: 30%;
+            background-color: #ccc;/* 背景变灰色 */
+            color: #eee;/* 元素变白色 */
+        }
+
+        .cover {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            padding: 6px;
+            background-color: #fff;
+            margin-top: -50px;
+            background-size: cover;
+            animation: rotate1 5s infinite linear;
+            animation-play-state: running;
+            position: relative;
+            z-index: 2;
+        }
+        .cover img {
+            width: 100%;
+            border-radius: 100%;
+        }
+        .cover::before {/* 伪类元素 */
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes rotate1 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <!-- 操作界面 -->
+        <div class="playerOpe">
+            <!-- 歌曲封面 -->
+            <div class="cover">
+                <img src="http://p2.music.126.net/VGf3MMmpQpjppLrKPinepw==/109951164207181002.jpg" alt="封面">
+            </div>
+            <!-- 控制标识 -->
+            <div class="control">
+                <i class="fa fa-step-backward Backward"></i>
+                <i class="fa fa-play Play"></i>
+                <i class="fa fa-step-forward Forward"></i>
+                <i class="fa fa-bars Bars"></i>
+            </div>
+        </div>
+        <!-- 信息界面 -->
+        <div class="playerInf">
+
+        </div>
+    </div>
+
+    <div class="blurBG"></div>
+</body>
+</html>
