@@ -1,0 +1,30 @@
+[
+    {
+        "music_name": "都是夜归人",
+        "music_address": "http://music.163.com/song/media/outer/url?id=1376832321.mp3",
+        "singer_name": "阿云嘎,郑云龙",
+        "music_cover": "http://p2.music.126.net/VGf3MMmpQpjppLrKPinepw==/109951164207181002.jpg",
+        "total_time": "4:08"
+    },
+    {
+        "music_name": "开往春天的地铁",
+        "music_address": "http://music.163.com/song/media/outer/url?id=469272844.mp3",
+        "singer_name": "袁娅维TIA",
+        "music_cover": "http://p1.music.126.net/nrwi49EBCWZ9AK-zC2kxbA==/109951166580195042.jpg",
+        "total_time": "4:31"
+    },
+    {
+        "music_name": "相思",
+        "music_address": "http://music.163.com/song/media/outer/url?id=276294.mp3",
+        "singer_name": "毛阿敏",
+        "music_cover": "http://p1.music.126.net/OhnKZ86JoWQrVzTokYemuQ==/19078725765198702.jpg",
+        "total_time": "3:01"
+    },
+    {
+        "music_name": "异乡人",
+        "music_address": "http://music.163.com/song/media/outer/url?id=463262368.mp3",
+        "singer_name": "李健",
+        "music_cover": "http://p2.music.126.net/Lq_qFGq_jN_7gcmod4k1Vg==/109951166580195447.jpg",
+        "total_time": "4:51"
+    }
+]
